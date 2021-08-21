@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "DJB Chalk";
+    src: url("../font/DJB_Chalk.ttf");
+ }
+
+body{
+    height: 97vh;
+    font-family: "DJB Chalk";
+    color: white;
+}
+
+.interface{
+    background-image: url("../img/quadro-verde.jpg");
+    background-size: cover;
+    height: 100%;
+    margin: auto;
+    margin-top: 10px;
+    max-width: 1200px;
+    min-width: 1200px;
+    min-height: 700px;
+}
+
+.title{
+    padding-top: 65px;
+}
+
+h1{
+    font-size: 45px;
+    text-align: center;
+
+}
+
+.content{
+    margin-top: 130px;
+}
+
+.geo-value{
+    display: flex;
+    font-size: 25px;
+    margin: 5px 0;
+    padding-left: 125px;
+}
+
+.geo-value input{
+    padding: 0;
+    margin-left: 10px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    font-size: 18px;
+}
+
+.geo-value label {
+    margin: auto 0;
+}
+
+.geo-value button{
+    border-radius: 7px;
+    margin-right: 10px;
+}
+
+.answer{
+    font-size: 23px;
+    margin-top: 140px;
+    text-align: center;
+}
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Pitágoras</title>
+
+    <!-- css style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+</head>
+
+<body>
+
+    <div class="interface">
+
+        <div class="title">
+            <h1> Calculadora de Teorema de Pitágoras </h1>
+        </div>
+        
+        <div class="content">
+            <form name="calculo" method="POST" onsubmit="validation(event)">
+                <div class="geo-value">
+                    <label for="catOp">Cateto Oposto: </label>
+                    <input class="form-control-sm" type="text" name="catOp" id="catOp">
+                </div>
+
+                <div class="geo-value">
+                    <label for="catAdj">Cateto Adjacente: </label>
+                    <input class="form-control-sm" type="text" name="catAdj" id="catAdj">
+                </div>
+
+                <div class="geo-value">
+                    <label for="hip">Hipotenusa: </label>
+                    <input class="form-control-sm" type="text" name="hip" id="hip">
+                </div>
+                <div class="geo-value">
+                    <button type="submit" class="buttons">Calcular</button>
+                    <button type="reset" class="buttons">Limpar</button>
+                </div>
+            </form>
+        </div>
+        <div class="answer">
+            <h2 id="answer"></h2>
+        </div>
+    </div>
+
+<!-- scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="./assets/scripts/function.js"></script>
+
+</body>
+
+</html>
