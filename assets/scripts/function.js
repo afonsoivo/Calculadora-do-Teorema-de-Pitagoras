@@ -1,3 +1,9 @@
+/**
+ * Essa função faz o cálculo de um dos lados de triângulo .
+ * @param {float} catOp - Valor cateto oposto.
+ * @param {float} catAdj - Valor cateto adjacente.
+ * @param {float} hip - Valor hipotenusa.
+ */
 function calculate(catOp, catAdj, hip) {
     if (!hip) {
         hip = Math.sqrt(Math.pow(catAdj, 2) + Math.pow(catOp, 2))
@@ -11,7 +17,10 @@ function calculate(catOp, catAdj, hip) {
     }
 }
 
-
+/**
+ * Essa função faz a validação dos valores digitados no formulário .
+ * @param event - Parâmetros enviados pelo o formulário.
+ */
 function validation(event) {
     event.preventDefault();
     form = event.target
