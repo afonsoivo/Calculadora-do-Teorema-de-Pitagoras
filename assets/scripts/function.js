@@ -24,17 +24,15 @@ function calculate(catOp, catAdj, hip) {
 function validation(event) {
     event.preventDefault();
     form = event.target
-    catOp = form.elements['catOp'].value || null
-    catAdj = form.elements['catAdj'].value || null
-    hip = form.elements['hip'].value || null
+    catOp = form.elements['catOp'].value
+    catAdj = form.elements['catAdj'].value
+    hip = form.elements['hip'].value
     if (catOp && catAdj && hip) {
         document.getElementById('answer').textContent = `Por favor digite apenas dois valores!`
     } else if (!catOp && !hip || !catAdj && !hip || !catAdj && !catOp) {
         document.getElementById('answer').textContent = `Por favor digite apenas dois valores!`
     } else if (catOp && catOp <= 0 || catAdj && catAdj <= 0 || hip && hip <= 0) {
         document.getElementById('answer').textContent = `Os valores não podem ser negativos ou igual a zero.`
-    } else if (isNaN(catOp) || isNaN(catAdj) || isNaN(hip)) {
-        document.getElementById('answer').textContent = `Os valores precisam ser números.`
     } else if (catOp >= hip || catAdj >= hip) {
         document.getElementById('answer').textContent = `Os Catetos não podem ser maior ou igual a hipotenunsa.`
     } else {
