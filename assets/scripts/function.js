@@ -33,8 +33,6 @@ function validation(event) {
         document.getElementById('answer').textContent = `Por favor digite apenas dois valores!`
     } else if (catOp && catOp <= 0 || catAdj && catAdj <= 0 || hip && hip <= 0) {
         document.getElementById('answer').textContent = `Os valores não podem ser negativos ou igual a zero.`
-    } else if (catOp >= hip || catAdj >= hip) {
-        document.getElementById('answer').textContent = `Os Catetos não podem ser maior ou igual a hipotenunsa.`
     } else {
         calculate(catOp, catAdj, hip)
     }
